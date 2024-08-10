@@ -65,7 +65,7 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     logging.info(f"Получена команда /start от пользователя {update.message.chat_id}")
     keyboard = [[KeyboardButton("Проверить статус серверов")]]
     reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
-    await update.message.reply_text("Текст текст текст", reply_markup=reply_markup)
+    await update.message.reply_text("Привет! 👋\n\nЯ телеграм бот сервиса @beatVPN_bot, который помогает проверить статус наших серверов, к которым вы подключаетесь.\nЕсли у вас не подключается к серверу, вы всегда можете проверить его статус.\n\nНажмите кнопку ниже, чтобы я проверил наши сервера и прислал их статусы. 🙂", reply_markup=reply_markup)
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = update.message.text
