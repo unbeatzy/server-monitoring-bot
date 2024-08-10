@@ -7,7 +7,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, Con
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 # Ваш токен бота от BotFather
-TOKEN = 'your_bot_toke'
+TOKEN = 'your_bot_token'
 
 # ID пользователя, который будет получать уведомления о статусе серверов
 NOTIFY_USER_ID = 'your_chat_id'
